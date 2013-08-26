@@ -209,6 +209,7 @@ module Lumberg
           port  = (@ssl ? 2083 : 2082)
         else
           port = @port
+        end
         proto = (@ssl ? 'https' : 'http')
 
         "#{proto}://#{@host}:#{port}/json-api/"
