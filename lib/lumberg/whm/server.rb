@@ -201,7 +201,7 @@ module Lumberg
 
       def format_url(options = {})
         @ssl = true if @ssl.nil?
-        port  = (@ssl ? 2087 : 2086)
+        port  = (@ssl ? 2083 : 2082)
         proto = (@ssl ? 'https' : 'http')
 
         "#{proto}://#{@host}:#{port}/json-api/"
